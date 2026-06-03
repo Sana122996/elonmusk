@@ -1,0 +1,8 @@
+{
+  "name": "musk-trillion-h5",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "deploy": "npx --yes vercel@latest deploy --prod"
+  }
+}

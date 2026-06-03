@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>马斯克身家1万亿</title>
+    <link rel="stylesheet" href="./styles.css?v=20260603-gdp-font-timing-v11" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        overflow-x: hidden;
+        background: #fff !important;
+      }
+
+      .h5 {
+        width: 100%;
+        max-width: 414px;
+        margin: 0 auto;
+        background: #fff;
+      }
+
+      @media (max-width: 480px) {
+        .h5 {
+          max-width: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="h5" aria-label="马斯克身家1万亿 H5">
+      <section class="cover" id="homeScreen">
+        <span id="wealthCounter" class="sr-only">1,000,000,000,000</span>
+
+        <section class="hero-stage" aria-label="马斯克飞向一万亿美元">
+          <img class="wealth-number" src="./assets/wealth-number.png" alt="1,000,000,000,000" />
+          <img class="musk-fly" src="./assets/musk-fly.png" alt="马斯克像素插画" />
+          <img class="coin coin-left" src="./assets/coin.png" alt="" />
+          <img class="coin coin-right" src="./assets/coin.png" alt="" />
+          <img class="sparkle spark-one" src="./assets/sparkle.png" alt="" />
+          <img class="sparkle spark-two" src="./assets/sparkle.png" alt="" />
+          <img class="sparkle spark-three" src="./assets/sparkle.png" alt="" />
+        </section>
+
+        <header class="cover-title">
+          <h1>
+            <span>马斯克身家</span>
+            <span>突破<strong>1万亿</strong></span>
+          </h1>
+          <div class="brand-row" aria-label="金十数据 财料独家策划">
+            <img src="./assets/jinshi-data-logo.svg" alt="金十数据" />
+            <i></i>
+            <span>财料独家策划</span>
+          </div>
+        </header>
+
+        <nav class="pill-actions" aria-label="数据对比入口">
+          <button class="topic-pill pill-yellow" data-scene="gdp"><span>相当于哪些国家的GDP</span><b>›</b></button>
+          <button class="topic-pill pill-cyan" data-scene="companies"><span>相当于哪些公司的市值</span><b>›</b></button>
+          <button class="topic-pill pill-pink" data-scene="exchanges"><span>相当于哪些交易所的股票总市值</span><b>›</b></button>
+          <button class="topic-pill pill-orange" data-scene="commodities"><span>相当于哪些商品场内市值</span><b>›</b></button>
+        </nav>
+      </section>
+
+      <section class="case-panel" id="scenePanel" aria-hidden="true">
+        <article class="case-sheet" aria-labelledby="sceneTitle">
+          <header class="case-header">
+            <button class="round-button" id="closeScene" aria-label="返回首页">首页</button>
+            <div>
+              <p id="sceneKicker">第一关 · 国家GDP</p>
+              <h2 id="sceneTitle">相当于哪些国家的GDP</h2>
+            </div>
+            <button class="round-button next-button" id="nextScene" aria-label="看下一个">下一个</button>
+          </header>
+          <div class="case-content" id="sceneContent"></div>
+        </article>
+      </section>
+
+      <section class="sheet" id="shareSheet" aria-hidden="true">
+        <button class="sheet-scrim" data-close-sheet aria-label="关闭分享"></button>
+        <div class="sheet-body">
+          <div class="handle"></div>
+          <h3>生成分享卡</h3>
+          <div class="poster">
+            <span>1万亿档案</span>
+            <strong>马斯克身家1万亿</strong>
+            <small>一张关于财富尺度的分叉档案</small>
+          </div>
+          <button class="primary-action" data-close-sheet>生成分享海报</button>
+        </div>
+      </section>
+
+      <section class="sheet" id="commentSheet" aria-hidden="true">
+        <button class="sheet-scrim" data-close-sheet aria-label="关闭评论"></button>
+        <div class="sheet-body">
+          <div class="handle"></div>
+          <h3>评论</h3>
+          <div class="comment-list">
+            <p><strong>金十用户</strong> GDP 这一页最像把财富放进世界排名里。</p>
+            <p><strong>市场观察者</strong> 交易所对比如果补上数据会很有冲击力。</p>
+          </div>
+          <label class="comment-input">
+            <input type="text" placeholder="写下你的参照物" />
+            <button id="sendComment">发送</button>
+          </label>
+        </div>
+      </section>
+
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+      <footer class="bottom-actions" aria-label="页面操作">
+        <button class="download-btn" id="downloadApp">
+          <svg class="j-action-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v10.2"/><path d="m7.4 9.8 4.6 4.6 4.6-4.6"/><path d="M5.2 18.7h13.6"/></svg>
+          下载金十数据APP
+        </button>
+        <button class="ghost-btn" id="openComment">
+          <svg class="j-action-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 6.4h13a2.8 2.8 0 0 1 2.8 2.8v5.2a2.8 2.8 0 0 1-2.8 2.8h-6.1l-4.9 3v-3H5.5a2.8 2.8 0 0 1-2.8-2.8V9.2a2.8 2.8 0 0 1 2.8-2.8Z"/></svg>
+          评论
+        </button>
+        <button class="ghost-btn" id="openShare">
+          <svg class="j-action-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.4 12.3 15.7 8"/><path d="m8.4 12.3 7.3 4.2"/><circle cx="6" cy="12.3" r="2.3"/><circle cx="18" cy="6.7" r="2.3"/><circle cx="18" cy="17.3" r="2.3"/></svg>
+          分享
+        </button>
+      </footer>
+    </main>
+
+    <script src="./app.js?v=20260603-gdp-font-timing-v11"></script>
+  </body>
+</html>
